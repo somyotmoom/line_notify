@@ -5,6 +5,8 @@ $message = array(
     'message' => 'ทดสอบส่ง LINE Notify', // ข้อความที่จะส่ง
     'stickerPackageId' => 1, // ส่งสติกเกอร์ไปด้วย
     'stickerId' => 2, // ส่งสติกเกอร์ไปด้วย
+    'imageThumbnail' => 'https://www.itcomputec.com/notify/thumbnail.jpg', // ลิงค์รูปภาพ ขนาดไม่เกิน 240x240
+    'imageFullsize' => 'https://www.itcomputec.com/notify/fullsize.jpg', // ลิงค์รูปภาพ ขนาดไม่เกิน 1024x1024
 );
 line_notify(TOKEN, $message); // เรียกใช้ฟังก์ชั่น
 function line_notify($token, $message){
