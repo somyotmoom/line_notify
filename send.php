@@ -3,6 +3,8 @@ define('API', 'https://notify-api.line.me/api/notify');
 define('TOKEN', 'C3fPBRAhyd0Z7wCKkJloBTUy7q7bBogo8QB6OAfrvW2'); // เปลี่ยนเป็น Token ของเรา
 $message = array(
     'message' => 'ทดสอบส่ง LINE Notify', // ข้อความที่จะส่ง
+    'stickerPackageId' => 1, // ส่งสติกเกอร์ไปด้วย
+    'stickerId' => 2, // ส่งสติกเกอร์ไปด้วย
 );
 line_notify(TOKEN, $message); // เรียกใช้ฟังก์ชั่น
 function line_notify($token, $message){
