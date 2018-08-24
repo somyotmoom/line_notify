@@ -1,4 +1,4 @@
-﻿Imports System.Net
+Imports System.Net
 Imports System.IO
 
 Partial Class _Default
@@ -12,7 +12,7 @@ Partial Class _Default
         request.Method = "POST"
         request.ContentType = "application/x-www-form-urlencoded"
         request.ContentLength = data.Length
-        'request.Headers.Add("Authorization", "Bearer token สร้างแล้ว Copy code มาใส่ครับ")
+        'token สร้างแล้ว Copy code มาใส่ครับ")
         request.Headers.Add("Authorization", "Bearer C3fPBRAhyd0Z7wCKkJloBTUy7q7bBogo8QB6OAfrvW2")
 
         Using stream = request.GetRequestStream()
