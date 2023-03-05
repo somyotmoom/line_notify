@@ -1,6 +1,6 @@
 <?php
 define('API', 'https://notify-api.line.me/api/notify');
-define('TOKEN', 'C3fPBRAhyd0Z7wCKkJloBTUy7q7bBogo8QB6OAfrvW2'); 
+define('TOKEN', $_POST['token']); 
 $message = array(
     'message' => 'ทดสอบส่ง LINE Notify', // ข้อความที่จะส่ง
 );
